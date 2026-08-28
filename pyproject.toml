@@ -1,0 +1,17 @@
+[project]
+name = "amir-bot"
+version = "0.1.0"
+description = "My personal Telegram bot"
+readme = "README.md"
+authors = [
+    { name = "Amirhossein", email = "thea9n@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+amir-bot = "amir_bot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
