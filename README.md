@@ -12,4 +12,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### Run
 ```bash
+uv sync --locked
+python ./src/main.py
 ```
