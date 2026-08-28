@@ -1,4 +1,10 @@
 # AMIR BOT
-A first telegram bot which I create
+My personal Telegram bot.
 
+### Dependeices
+1. python
 
+### Run
+```bash
+pip install -r requirements.txt
+```
