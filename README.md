@@ -10,6 +10,9 @@ My personal Telegram bot.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
+### Environment variables
+- TELEGRAM_TOKEN (Your Telegram token)
+
 ### Run
 ```bash
 uv sync --locked
