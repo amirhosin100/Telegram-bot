@@ -1,12 +1,22 @@
-import telebot
-from config.settings import TELEGRAM_TOKEN
+import asyncio
+from config import settings
+from aiogram import Bot, Dispatcher
 
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
-@bot.message_handler()
-def send_welcome(message):
-	bold_message = str(message.text).upper()
-	bot.reply_to(message,bold_message)
 
-bot.infinity_polling()
+bot = Bot(token=settings.TELEGRAM_TOKEN)
+dp = Dispatcher()
+
+
+@dp.message()
+async def main_message(message):
+    await message.answer("hello")
+
+
+async def main():
+    await dp.start_polling(bot)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
 
