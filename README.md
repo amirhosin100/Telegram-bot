@@ -13,6 +13,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Run
 ```bash
 uv sync --locked
-sourec .venv/bin/activate
+source .venv/bin/activate
 python ./src/main.py
 ```
